@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zxczxcc.fyp2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PHNS"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".mainmenu" />
+        <activity android:name=".register" />
+        <activity android:name=".addmail" />
+        <activity android:name=".findposition" />
+        <activity android:name=".generateqr" />
+        <activity android:name=".confirmation" />
+        <activity android:name=".failcorm" />
+        <activity android:name=".delet" />
+        <activity android:name=".addemail"></activity>
+    </application>
+
+</manifest>

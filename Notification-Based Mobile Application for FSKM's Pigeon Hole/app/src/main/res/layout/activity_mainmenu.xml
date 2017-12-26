@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_mainmenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:overScrollMode="ifContentScrolls"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical"
+    tools:context="com.example.zxczxcc.fyp2.mainmenu">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UiTM FSKM Mail System"
+        android:textSize="80px"
+        android:id="@+id/textView2"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:text="Scan Qr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addmail"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:onClick="admail" />
+
+    <Button
+        android:text="Find Position"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/find"
+        android:layout_below="@+id/addmail"
+        android:layout_centerHorizontal="true"
+        android:onClick="findp" />
+
+    <Button
+        android:text="Generate QR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/generateqr"
+        android:layout_below="@+id/find"
+        android:layout_alignStart="@+id/find"
+        android:onClick="genqr" />
+
+    <Button
+        android:text="Add Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/addemail"
+        android:layout_below="@+id/generateqr"
+        android:onClick="asd" />
+
+    <Button
+        android:text="Delete User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/del"
+        android:layout_below="@+id/addemail"
+        android:layout_centerHorizontal="true"
+        android:onClick="dels" />
+
+    <Button
+        android:text="Log Out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/del"
+        android:id="@+id/logout"
+        android:layout_centerHorizontal="true"
+        android:onClick="logout" />
+
+</RelativeLayout>
